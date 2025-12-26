@@ -170,8 +170,12 @@ const about: About = {
         description: <>Studied software engineering.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "CBSE (Class XII) U.S.M Public School, Nangloi, 2023",
+        description: <>Completed higher secondary education with a score of 89%.</>,
+      },
+      {
+        name: "CBSE (Class X) 2021 ST. Mary’s School, Hisar 93%",
+        description: <>Secured 93% in CBSE Class X Board Examinations.</>,
       },
     ],
   },
