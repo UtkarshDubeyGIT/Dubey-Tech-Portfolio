@@ -52,6 +52,12 @@ const social: Social = [
     link: `mailto:${person.email}`,
     essential: true,
   },
+  {
+    name: "Resume",
+    icon: "resume",
+    link: "https://drive.google.com/file/d/157HuEG3tcDR0jyyCYypHJn2CjFwdofBV/view?usp=sharing",
+    essential: true,
+  },
 ];
 
 const home: Home = {
