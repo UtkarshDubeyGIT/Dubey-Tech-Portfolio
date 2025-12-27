@@ -173,11 +173,11 @@ const about: About = {
       {
         name: "CBSE (Class XII) U.S.M Public School, Nangloi, 2023",
         description: (
-          <>Completed higher secondary education with a score of 89%.</>
+          <>Completed CBSE higher secondary education with a score of 89%.</>
         ),
       },
       {
-        name: "CBSE (Class X) 2021 ST. Mary’s School, Hisar 93%",
+        name: "CBSE (Class X) 2021 ST. Mary’s School, Hisar",
         description: <>Secured 93% in CBSE Class X Board Examinations.</>,
       },
     ],
