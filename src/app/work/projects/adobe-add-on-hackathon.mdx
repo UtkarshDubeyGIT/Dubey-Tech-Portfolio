@@ -1,0 +1,182 @@
+---
+title: "Loomis — AI Design Co-Pilot for Adobe Express"
+publishedAt: "2026-01-17"
+summary: "A canvas-aware AI assistant that understands your Adobe Express design in real time and suggests contextually relevant visuals with one-click insertion."
+images:
+  - "/images/projects/loomis/1.png"
+  - "/images/projects/loomis/2.png"
+  - "/images/projects/loomis/3.png"
+  - "/images/projects/loomis/4.png"
+  - "/images/projects/loomis/5.png"
+
+team:
+  - name: "Utkarsh Dubey"
+    role: "Lead Engineer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/dubey9990/"
+  - name: "Anshuman Raj"
+    role: "AI & Vision Integration"
+    linkedIn: "https://www.linkedin.com/in/anshuman-raj-6835b5290/"
+  - name: "Kanishk Sharma"
+    role: "API & Asset Integration"
+  - name: "Dev Aggarwal"
+    role: "Adobe SDK & DevOps"
+    github: "https://github.com/DevAggarwal03"
+link: "https://github.com/DevAggarwal03/Loomis-Adobe-Express-Add-on"
+video: "https://www.youtube.com/watch?v=IUtnioTxOO4"
+pitchDeck: "https://drive.google.com/file/d/1-Yl3WOPzWZGF_6frg8W1lbCQZdmQiiqb/view?usp=sharing"
+---
+
+## Overview
+
+Loomis reimagines the creative workflow inside **Adobe Express** by bringing intelligence directly into the canvas. Instead of forcing designers to switch between multiple tools to find assets, Loomis **“sees” the design, understands its intent, and proactively suggests what it needs next.**
+
+The system combines computer vision, contextual reasoning, and intelligent asset orchestration to deliver a seamless, native-feeling design assistant that keeps creativity uninterrupted.
+
+Core capabilities include:
+
+- **Canvas-Aware AI**: Understands theme, style, and context
+- **Intent-Based Recommendations**: Surfaces only relevant visuals
+- **One-Click Insertion**: Instantly applies assets inside Express
+- **Constraint-Aware Retrieval**: Handles attribution and Adobe rules
+- **Native UX**: Feels like a built-in feature, not a plugin
+
+---
+
+## What Loomis Does
+
+Loomis operates directly within Adobe Express and performs the following:
+
+1. **Scans the current canvas (or an uploaded image)**
+2. **Analyzes visual and semantic context using AI**
+3. **Identifies what exists — and what might be missing**
+4. **Suggests:**
+
+   - Images
+   - Backgrounds
+   - Illustrations
+   - GIFs
+
+5. Allows **one-click insertion** of any suggested asset into the design
+
+This transforms asset discovery from a search problem into an **AI-driven design augmentation problem.**
+
+---
+
+## System Architecture
+
+Loomis follows a modular, service-oriented architecture:
+
+1. **UI Layer (Client)**
+
+   - Built with **Lit + Spectrum Web Components**
+   - Designed to match Adobe Express’ native look and feel
+   - Handles loading states, pagination, and graceful error handling
+
+2. **Canvas Interface Layer**
+
+   - Uses **Adobe Express SDK**
+   - Reads live canvas state
+   - Modifies the canvas when assets are inserted
+
+3. **Vision & Understanding Layer**
+
+   - Powered by **Google Gemini Vision**
+   - Extracts:
+
+     - Theme (e.g., “minimal tech”, “vibrant travel”, “corporate”)
+     - Visual style (color palette, composition, tone)
+     - Content intent (marketing, storytelling, branding, etc.)
+
+4. **Asset Orchestrator**
+
+   - Acts as a smart intermediary between AI and asset providers
+   - Retrieves assets from:
+
+     - **Tenor** → GIFs
+     - **Unsplash** → Images, illustrations, backgrounds
+
+   - Ensures:
+
+     - Proper attribution
+     - Compliance with Adobe constraints
+     - Format compatibility (especially for GIF animations)
+
+5. **Recommendation Engine**
+
+   - Filters raw AI outputs into structured, segmented suggestions
+   - Avoids randomness by enforcing clear categories and relevance scoring
+
+---
+
+## Key Technical Challenges & Solutions
+
+- **Inconsistent AI suggestions** → Introduced structured prompts + post-processing constraints
+- **GIF compatibility issues** → Added validation layer for Adobe animation requirements
+- **Slow AI analysis** → Optimized request batching and selective canvas scanning
+- **UI latency** → Designed progressive loading and pagination
+- **Attribution compliance** → Automated metadata handling in the Asset Orchestrator
+
+---
+
+## Accomplishments
+
+Loomis is not a prototype — it is a **functional, deployable product** inside Adobe Express.
+
+We successfully:
+
+- Delivered a **fully working MVP inside Adobe Express**
+- Implemented **true canvas scanning and AI reasoning**
+- Enabled **real one-click asset insertion**
+- Provided **clear, explainable, segmented suggestions**
+- Built a **polished, native-feeling UI**
+- Made deployment easy via a **private install link**
+
+---
+
+## Technologies Used
+
+- **Frontend:** Lit, Spectrum Web Components
+- **Adobe Platform:** Adobe Express SDK
+- **AI / Vision:** Google Gemini Vision
+- **Asset Sources:**
+
+  - Tenor (GIFs)
+  - Unsplash (Images, Illustrations, Backgrounds)
+
+- **Languages:** JavaScript, HTML, CSS
+
+---
+
+## Impact
+
+Loomis improves the design workflow by:
+
+- Reducing tool switching
+- Minimizing creative friction
+- Accelerating design iteration
+- Helping non-designers create professional visuals
+- Keeping inspiration inside the canvas
+
+This directly aligns with enterprise productivity goals: **better output, faster.**
+
+---
+
+## What We Learned
+
+- AI works best with **clear structure and constraints**
+- More choices can slow designers down — **smart filtering matters**
+- UX is as important as AI — perception of speed is critical
+- Shipping a reliable product under tight deadlines is a real skill
+
+---
+
+## Resources
+
+- **Demo Video**: [Watch on YouTube](https://www.youtube.com/watch?v=IUtnioTxOO4)
+- **Pitch Deck**: [View Presentation](https://drive.google.com/file/d/1-Yl3WOPzWZGF_6frg8W1lbCQZdmQiiqb/view?usp=sharing)
+- **GitHub Repository**: [Loomis Adobe Express Add-on](https://github.com/DevAggarwal03/Loomis-Adobe-Express-Add-on)
+
+---
+
+**Built with ❤️ to make creativity faster, smarter, and frictionless inside Adobe Express.**
