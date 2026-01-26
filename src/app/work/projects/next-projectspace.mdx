@@ -1,0 +1,51 @@
+---
+title: "Next ProjectSpace Website MVP"
+publishedAt: "2025-05-28"
+summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+images:
+  - "/images/projects/next-projectspace/next-projectspace-home.png"
+  - "/images/projects/next-projectspace/next-projectspace-community.png"
+  - "/images/projects/next-projectspace/next-projectspace-projects.png"
+  - "/images/projects/next-projectspace/next-projectspace-dashboard.png"
+team:
+  - name: "Utkarsh Dubey"
+    role: "Developer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/dubey9990"
+link: https://next-projectspace.dubey.tech/
+---
+
+## Overview
+
+Development of a reusable project showcase and community platform using Next.js, designed as a flexible template for teams and client-facing applications.
+
+The platform provides a structured way to publish projects, manage content, and enable community discussions, while maintaining a clear separation between public pages and authenticated dashboards.
+
+## Key Features
+
+- **Project Showcase System**: Built modular project listing and detail views using Next.js and React, enabling teams to publish and organize projects with media, descriptions, and metadata.
+- **Community Discussions**: Implemented discussion threads and comments to allow users to engage around projects, turning static pages into collaborative spaces.
+- **Authentication and Roles**: Integrated Supabase Auth with role-based access to support authenticated dashboards and basic admin workflows.
+- **Admin and Content Workflows**: Developed internal tools for managing projects and announcements, enabling controlled content updates without direct code changes.
+- **Reusable Template Architecture**: Structured routing and layouts to support rapid reuse for similar platforms, with clear separation of public and authenticated areas.
+
+## Technologies Used
+
+- **Next.js (App Router)**: For server-rendered pages, nested layouts, and dynamic routing.
+- **Supabase**: For PostgreSQL database, authentication, and file storage.
+- **Tailwind CSS**: For consistent, responsive UI styling.
+- **shadcn/ui**: For composable UI components.
+- **Framer Motion**: For subtle interaction and transition effects.
+- **Vercel**: For deployment and hosting.
+
+## Challenges and Learnings
+
+A key challenge was designing routing and authentication flows that supported both public access and protected dashboards without introducing auth flicker or duplicated logic. This was solved by combining middleware, server-side route guards, and database-level access control.
+
+Another learning was structuring the platform as a reusable template rather than a one-off site, which required keeping features modular and avoiding hardcoded, project-specific assumptions.
+
+## Outcome
+
+The platform serves as a reusable foundation for project and community-driven applications. It enables faster setup for similar use cases, provides a consistent structure for content and discussions, and supports scalable growth without major architectural changes.
+
+It is now positioned as a flexible template for teams or clients who need a project showcase with built-in community features.
