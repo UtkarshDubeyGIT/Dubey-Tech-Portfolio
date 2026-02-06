@@ -55,7 +55,7 @@ const social: Social = [
   {
     name: "Resume",
     icon: "resume",
-    link: "https://drive.google.com/file/d/157HuEG3tcDR0jyyCYypHJn2CjFwdofBV/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1lwSMcRxnmA58XM43_jY7WuOU9Wei-xi0/view?usp=sharing",
     essential: true,
   },
 ];
